@@ -106,7 +106,7 @@ interface StackInterface<T> {
 
 ## Queue
 
-A Queue is a linear data structure that follows the LIFO (First-In-First-Out) principle.
+A Queue is a linear data structure that follows the FIFO (First-In-First-Out) principle.
 
 * Linear Queue
 * Circular Queue
