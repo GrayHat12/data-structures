@@ -44,6 +44,13 @@ public class PriorityQueue<T> implements QueueInterface<T> {
         this.queue.add(new PriorityNode<T>(element));
     }
 
+    public void enqueue(T element, int priority) throws QueueOverflowException {
+        if (this.isFull()) {
+            throw new QueueOverflowException();
+        }
+        this.queue.add(new PriorityNode<T>(element, priority));
+    }
+
     @Override
     public T dequeue() throws QueueUnderflowException {
         if (this.isEmpty()) {
